@@ -31,6 +31,10 @@ expo install react-native-elements
 expo install expo-app-loading
 
 npm install @react-native-community/hooks
+
+expo init oneTap --npm
+expo install yup
+expo install formik
 ```
 
 ## [The Ultimate React Native Series:](https://codewithmosh.com/courses/887220/ 'Mosh HameDani')
@@ -90,8 +94,8 @@ onPress={handlePress}
 
 ### [Forms #2 Building the Login Form](https://codewithmosh.com/courses/887220/lectures/16762473 '6:30 onChangeText={text => setEmail(text)}')
 
-[Forms #3 Building Better Forms with Formik](https://codewithmosh.com/courses/887220/lectures/16762478 'npm i formik')  
-[Forms #4 Form Validation with Yup](https://codewithmosh.com/courses/887220/lectures/16762471 'npm i yup 2:30 Yup.matches()')  
+[Forms #3 Building Better Forms with Formik](https://codewithmosh.com/courses/887220/lectures/16762478 'expo install formik')  
+[Forms #4 Form Validation with Yup](https://codewithmosh.com/courses/887220/lectures/16762471 'expo install yup 2:30 Yup.matches()')  
 [Forms #7 Building the Field Component](https://codewithmosh.com/courses/887220/lectures/16762484 '4:30 spread operator')  
 [Forms #9 Building the Form Component](https://codewithmosh.com/courses/887220/lectures/16762474 '1:30 {() => <>{children}</>}')  
 [Forms #10 Organizing Components](https://codewithmosh.com/courses/887220/lectures/16762480 'moving to a forms folder')

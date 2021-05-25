@@ -10,9 +10,21 @@ import * as React from 'react';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
-import TabOneScreen from '../screens/TabOneScreen';
-import TabTwoScreen from '../screens/TabTwoScreen';
-import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
+import TabOneScreen from '../app/screens/TabOneScreen';
+import TabTwoScreen from '../app/screens/TabTwoScreen';
+import TabThreeScreen from '../app/screens/TabThreeScreen';
+import TabFourScreen from '../app/screens/TabFourScreen';
+import TabFiveScreen from '../app/screens/TabFiveScreen';
+import {
+  BottomTabParamList,
+  TabOneParamList,
+  TabTwoParamList,
+  TabThreeParamList,
+  TabFourParamList,
+  TabFiveParamList
+} from '../types';
+
+import FancyLogo from '../app/components/FancyLogo'
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -24,17 +36,38 @@ export default function BottomTabNavigator() {
       initialRouteName="TabOne"
       tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>
       <BottomTab.Screen
-        name="TabOne"
+        name="Home"
         component={TabOneNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
         }}
       />
       <BottomTab.Screen
-        name="TabTwo"
+        name="Cart"
         component={TabTwoNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="cart-sharp" color={color} />,
+        }}
+      />
+      <BottomTab.Screen
+        name="Upload"
+        component={TabThreeNavigator}
+        options={{
+          tabBarIcon: ({ color }) => <TabBarIcon name="camera-sharp" color={color} />,
+        }}
+      />
+      <BottomTab.Screen
+        name="Profile"
+        component={TabFourNavigator}
+        options={{
+          tabBarIcon: ({ color }) => <TabBarIcon name="person-circle-sharp" color={color} />,
+        }}
+      />
+      <BottomTab.Screen
+        name="Settings"
+        component={TabFiveNavigator}
+        options={{
+          tabBarIcon: ({ color }) => <TabBarIcon name="settings-sharp" color={color} />,
         }}
       />
     </BottomTab.Navigator>
@@ -57,7 +90,8 @@ function TabOneNavigator() {
       <TabOneStack.Screen
         name="TabOneScreen"
         component={TabOneScreen}
-        options={{ headerTitle: 'Tab One Title' }}
+        // options={{ headerTitle: 'Tab One Title' }}
+        options={{ headerTitle: props => <FancyLogo {...props} /> }}
       />
     </TabOneStack.Navigator>
   );
@@ -71,8 +105,54 @@ function TabTwoNavigator() {
       <TabTwoStack.Screen
         name="TabTwoScreen"
         component={TabTwoScreen}
-        options={{ headerTitle: 'Tab Two Title' }}
+        // options={{ headerTitle: 'Tab Two Title' }}
+        options={{ headerTitle: props => <FancyLogo {...props} /> }}
       />
     </TabTwoStack.Navigator>
+  );
+}
+
+const TabThreeStack = createStackNavigator<TabThreeParamList>();
+
+function TabThreeNavigator() {
+  return (
+    <TabThreeStack.Navigator>
+      <TabThreeStack.Screen
+        name="TabThreeScreen"
+        component={TabThreeScreen}
+        // options={{ headerTitle: 'Tab Three Title' }}
+        options={{ headerTitle: props => <FancyLogo {...props} /> }}
+      />
+    </TabThreeStack.Navigator>
+  );
+}
+
+const TabFourStack = createStackNavigator<TabFourParamList>();
+
+function TabFourNavigator() {
+  return (
+    <TabFourStack.Navigator>
+      <TabFourStack.Screen
+        name="TabFourScreen"
+        component={TabFourScreen}
+        // options={{ headerTitle: 'Tab Four Title' }}
+        options={{ headerTitle: props => <FancyLogo {...props} /> }}
+      />
+    </TabFourStack.Navigator>
+  );
+}
+
+const TabFiveStack = createStackNavigator<TabFiveParamList>();
+
+function TabFiveNavigator() {
+  return (
+    <TabFiveStack.Navigator>
+      <TabFiveStack.Screen
+        name="TabFiveScreen"
+        component={TabFiveScreen}
+        // options={{ headerTitle: 'Tab Five Title' }}
+        options={{ headerTitle: props => <FancyLogo {...props} /> }}
+      />
+    </TabFiveStack.Navigator>
   );
 }
