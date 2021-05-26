@@ -14,6 +14,8 @@
 
 [React Native iOS Kit](https://github.com/callstack/react-native-ios-kit 'updated: 011-05-2020, users 58') & [docs](https://callstack.github.io/react-native-ios-kit/docs/installation.html 'docs') 58
 
+[Configuring the header bar](https://reactnavigation.org/docs/headers/ 'React Navigation')
+
 ```bash
 expo init --template expo-template-tabs@sdk-40 --npm
 

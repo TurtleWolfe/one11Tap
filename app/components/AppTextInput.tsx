@@ -24,7 +24,7 @@ export default AppTextInput
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: defaultStyles.colors.lightGrey,
+    backgroundColor: defaultStyles.colors.greyGrey,
     borderRadius: 25,
     flexDirection: "row",
     // width: "100%",

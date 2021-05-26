@@ -1,6 +1,7 @@
 import React from 'react'
 import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native'
 
+import defaultStyles from "../../config/styles";
 // import colors from '../../constants/Colors'
 import AppButton from '../../components/AppButton'
 
@@ -10,19 +11,20 @@ const WelcomeScreen = () => {
       blurRadius={3}
       style={styles.background}
       source={require('../../assets/Supplementary/background.jpg')}
+    // source={require('../../assets/Supplementary/background.jpg')}
     >
       <View
         style={styles.logoContainer}
       >
-        <Image
-          style={styles.logo}
-          source={require("../../assets/Supplementary/logo-red.png")}
-        />
         <Text
           style={styles.tagLine}
         >
-          Welcome Screen
+          Welcome to
       </Text>
+        <Image
+          style={styles.logo}
+          source={require("../../assets/images/logo.png")}
+        />
       </View>
 
       <View style={styles.buttonContainer}>
@@ -32,7 +34,9 @@ const WelcomeScreen = () => {
         <AppButton
           title="Register"
           onPress={() => console.log("register")}
-          color="secondary" />
+          color="secondary"
+        // color="greyGrey"
+        />
       </View>
 
     </ImageBackground>
@@ -66,7 +70,7 @@ const styles = StyleSheet.create({
   },
   logo: {
     height: 100,
-    width: 100,
+    width: 360,
     // position: 'absolute',
     // top: 70,
   },
@@ -79,7 +83,8 @@ const styles = StyleSheet.create({
   },
   tagLine: {
     // alignContent: 'center',
-    color: 'dodgerblue',
+    // color: 'black',
+    color: 'black',
     // justifyContent: 'center',
     fontSize: 25,
     fontWeight: 'bold',

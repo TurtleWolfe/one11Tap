@@ -39,9 +39,9 @@ const AccountScreen = () => {
     <Screen style={styles.screen}>
       <View style={styles.container}>
         <ListItem
-          title="TurtleWolfe"
+          title="Super Model"
           subTitle="MyEmail@gmail.com"
-          image={require("../../assets/Supplementary/Turtlewolfe.png")}
+          image={require("../../assets/resources/models/model00.png")}
         />
       </View>
       <View style={styles.container}>
@@ -65,7 +65,7 @@ const AccountScreen = () => {
       </View>
       <ListItem
         title="Log Out"
-        IconComponent={<AppIcon name="logout" backgroundColor="#ffe66d" />}
+        IconComponent={<AppIcon name="logout" backgroundColor={colors.fuchsia} />}
       />
     </Screen>
 
@@ -76,7 +76,7 @@ export default AccountScreen
 
 const styles = StyleSheet.create({
   screen: {
-    backgroundColor: colors.lightGrey,
+    backgroundColor: colors.greyGrey,
   },
   container: {
     // marginVertical: 20,

@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: "row",
     padding: 15,
-    backgroundColor: colors.white,
+    backgroundColor: colors.greyGrey,
     // backgroundColor: colors.secondary,
   },
   detailsContainer: {
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     borderRadius: 35,
     // marginRight: 10,
     // backgroundColor: colors.primary,
-    backgroundColor: "yellow",
+    backgroundColor: colors.greyGrey,
   },
   subTitle: {
     color: colors.mediumGrey,

@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   text: {
-    color: colors.white,
+    color: colors.darkGrey,
     fontSize: 18,
     textTransform: 'uppercase',
     fontWeight: 'bold',

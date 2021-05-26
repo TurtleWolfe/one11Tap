@@ -27,7 +27,7 @@ export default AppCard
 const styles = StyleSheet.create({
   card: {
     borderRadius: 15,
-    backgroundColor: colors.lightGrey,
+    backgroundColor: colors.greyGrey,
     marginBottom: 20,
     overflow: "hidden",
     // width: 360,
@@ -40,11 +40,10 @@ const styles = StyleSheet.create({
   image: {
     // width: 360,
     width: "100%",
-    height: 200,
+    height: 350,
     resizeMode: "cover",
     justifyContent: "center",
-    backgroundColor: colors.mediumGrey,
-
+    backgroundColor: colors.greyGrey,
   },
   subTitle: {
     color: colors.secondary,

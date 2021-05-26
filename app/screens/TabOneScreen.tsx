@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
 
+import defaultStyles from "../config/styles";
+
 import LoginScreen from './compScreens/LoginScreen';
 import RegisterScreen from './compScreens/RegisterScreen';
 import WelcomeScreen from './compScreens/WelcomeScreen';
@@ -11,8 +13,8 @@ export default function TabOneScreen() {
   return (
     <View style={styles.container}>
       {/* <LoginScreen /> */}
-      <RegisterScreen />
-      {/* <WelcomeScreen /> */}
+      {/* <RegisterScreen /> */}
+      <WelcomeScreen />
       {/* <Text style={styles.title}>Tab One</Text> */}
       {/* <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" /> */}
       {/* <EditScreenInfo path="/screens/TabOneScreen.tsx" /> */}
@@ -25,6 +27,8 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: defaultStyles.colors.greyGrey,
+    // backgroundColor: "pink",
   },
   title: {
     fontSize: 20,

@@ -8,21 +8,21 @@ import colors from "../../../constants/Colors";
 const listings = [
   {
     id: 1,
-    title: "Red jacket for sale",
-    price: 100,
-    image: require("../../assets/Supplementary/jacket.jpg"),
+    title: "Foundation",
+    price: 10,
+    image: require("../../assets/resources/cosmetics/eggBottle200.png"),
   },
   {
     id: 2,
-    title: "Couch in great condition",
-    price: 1000,
-    image: require("../../assets/Supplementary/couch.jpg"),
+    title: "Compact",
+    price: 200,
+    image: require("../../assets/resources/cosmetics/foundation200.png"),
   },
   {
     id: 3,
-    title: "Wolfe in Turtle's clothing",
-    price: 5000,
-    image: require("../../assets/Supplementary/Turtlewolfe.png"),
+    title: "LipStick",
+    price: 3000,
+    image: require("../../assets/resources/cosmetics/lipstick200.png"),
   },
 ];
 
@@ -49,6 +49,6 @@ export default ListingsScreen
 const styles = StyleSheet.create({
   screen: {
     padding: 10,
-    backgroundColor: colors.medium,
+    backgroundColor: colors.greyGrey,
   },
 })
