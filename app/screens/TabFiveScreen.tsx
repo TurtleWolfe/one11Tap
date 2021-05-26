@@ -4,6 +4,8 @@ import { StyleSheet } from 'react-native';
 import defaultStyles from "../config/styles";
 
 import EditScreenInfo from '../components/EditScreenInfo';
+
+// import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 
 export default function TabFiveScreen() {
@@ -26,6 +28,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: 'bold',
+    color: defaultStyles.colors.danger,
   },
   separator: {
     marginVertical: 30,

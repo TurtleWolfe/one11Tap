@@ -30,13 +30,20 @@ expo install react-native-elements
 # (may not be necessary)
 # expo install expo-font
 # expo install react-native-elements expo-font
-expo install expo-app-loading
+# expo install expo-app-loading
 
-npm install @react-native-community/hooks
+# npm install @react-native-community/hooks
 
 expo init oneTap --npm
+
 expo install yup
 expo install formik
+
+expo install expo-image-picker
+expo install expo-sharing
+expo install anonymous-files
+
+expo install react-native-elements
 ```
 
 ## [The Ultimate React Native Series:](https://codewithmosh.com/courses/887220/ 'Mosh HameDani')
