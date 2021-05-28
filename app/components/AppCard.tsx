@@ -4,7 +4,17 @@ import { Image, StyleSheet, View } from 'react-native'
 import colors from '../../constants/Colors'
 import AppText from './AppText'
 
-const AppCard = ({ title, subTitle, image }) => {
+interface AppCardProps {
+  title?: string;
+  subTitle?: string;
+  image?: string;
+}
+
+const AppCard: React.FC<AppCardProps> = ({
+  title = 'default',
+  subTitle = 'default',
+  image,
+}) => {
   return (
     <View style={styles.card}>
       <Image

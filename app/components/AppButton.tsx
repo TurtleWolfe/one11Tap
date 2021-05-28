@@ -3,7 +3,13 @@ import { StyleSheet, Text, TouchableOpacity } from 'react-native'
 
 import colors from '../../constants/Colors'
 
-const AppButton = ({
+interface AppButtonProps {
+  color?: string;
+  title?: string;
+  onPress?: any;
+}
+
+const AppButton: React.FC<AppButtonProps> = ({
   color = "primary",
   onPress = () => console.log("default tapped"),
   title = 'default',
@@ -38,3 +44,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   }
 })
+
+
+
+
+
+
+

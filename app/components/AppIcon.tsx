@@ -4,11 +4,18 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import colors from '../../constants/Colors'
 
-const AppIcon = ({
-  name = "email",
-  size = 40,
+interface AppIconProps {
+  backgroundColor?: string;
+  iconColor?: string;
+  name?: string;
+  size?: number;
+}
+
+const AppIcon: React.FC<AppIconProps> = ({
   backgroundColor = colors.black,
   iconColor = colors.lightGrey,
+  name = "email",
+  size = 40,
 }) => {
   return (
     <View
