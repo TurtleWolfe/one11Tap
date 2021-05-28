@@ -3,14 +3,16 @@ import { StyleSheet } from 'react-native';
 
 import defaultStyles from "../config/styles";
 
-import ListingsScreen from './compScreens/ListingsScreen';
-import EditScreenInfo from '../components/EditScreenInfo';
+// import ListingsScreen from './compScreens/ListingsScreen';
+import MessagesScreen from '../screens/compScreens/MessagesScreen';
+// import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 
 export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
-      <ListingsScreen />
+      {/* <ListingsScreen /> */}
+      <MessagesScreen />
       {/* <Text style={styles.title}>Cart</Text> */}
       {/* <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" /> */}
       {/* <EditScreenInfo path="/screens/TabTwoScreen.tsx" /> */}

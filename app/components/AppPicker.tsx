@@ -13,7 +13,26 @@ import AppText from "./AppText";
 import Screen from "../screens/compScreens/Screen";
 import defaultStyles from "../config/styles";
 import PickerItem from "./PickerItem";
-const AppPicker = ({
+
+interface AppPickerProps {
+  PickerItemComponent?: any;
+  icon?: any;
+  items?: any;
+  numberOfColumns?: number;
+  onSelectItem?: any;
+  placeholder?: string;
+  selectedItem?: any;
+  width?: string;
+}
+
+// items={categories}
+// name="category"
+// numberOfColumns={3}
+// PickerItemComponent={CategoryPickerItem}
+// placeholder="Category"
+// width="50%"
+
+const AppPicker: React.FC<AppPickerProps> = ({
   icon,
   items,
   numberOfColumns = 1,

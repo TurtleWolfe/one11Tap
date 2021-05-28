@@ -1,10 +1,19 @@
 import React from 'react'
-// import { Platform, StyleSheet, Text } from 'react-native'
 import { Text } from 'react-native'
 
 import defaultStyles from "../config/styles";
 
-const AppText = ({ children, style, ...otherProps }) => {
+interface AppTextProps {
+  children?: any;
+  style?: object;
+  otherProps?: string[];
+}
+
+const AppText: React.FC<AppTextProps> = ({
+  children,
+  style,
+  ...otherProps
+}) => {
   return (
     <Text style={[defaultStyles.text, style]}{...otherProps}>
       { children}

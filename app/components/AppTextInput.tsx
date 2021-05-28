@@ -4,7 +4,18 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import defaultStyles from "../config/styles";
 
-const AppTextInput = ({ icon, width = "100%", ...otherProps }) => {
+interface AppTextInputProps {
+  icon?: string;
+  width?: string;
+  otherProps?: string[];
+}
+
+const AppTextInput: React.FC<AppTextInputProps> = ({
+  icon,
+  width = "100%",
+  ...otherProps
+}) => {
+  // const AppTextInput = ({ icon, width = "100%", ...otherProps }) => {
   return (
     <View style={[styles.container, { width }]}>
       {icon && (
